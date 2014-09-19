@@ -5,11 +5,11 @@
 
   <display-name>Archetype Created Web Application</display-name>
     <servlet>
-  	<servlet-name>sort</servlet-name>
+  	<servlet-name>SortServlet</servlet-name>
   	<servlet-class>com.ajbradley.AlgorithmsWebApp.SortServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>sort</servlet-name>
+  	<servlet-name>SortServlet</servlet-name>
   	<url-pattern>/sort</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -3,7 +3,46 @@
 	2014 Aaron J. Bradley
 */
 
-/* General and Typographic Conventions*/
+/* Universal */
+html {
+  /* overflow-y: scroll; */
+  font-family: "Helvetica";
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0 5% 0 5%;
+  clear: both;
+  height: 100%;
+  width: 90%;
+  min-width: 1000px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.left {
+  text-align: left;
+}
+
+.span-row {
+  width: 100%;
+  float: left;
+}
 
 /*Header*/
 
@@ -11,6 +50,94 @@ h1#headerTitle {
 	color: red;
 }
 
+.header {
+
+}
+
+#headerDiv {
+	height: 60px;
+	background-color: #eaeaea;
+
+}
+
+#headerLeft {
+	height: 100%;
+	background-color: #84FC00;
+	width: 30%;
+	float: left;
+}
+
+#headerRight {
+	height: 100%;
+	background-color: #0099cc;
+	width: 70%;
+	float: left;
+}
+
 /* Footer */
 
 /* Left Menu */
+.leftMenu {
+
+}
+
+#leftMenuDiv {
+	width: 15%;
+	height: 600px;
+	float: left;
+	background-color: #DE5900;
+}
+
+/* Body */
+#body {
+	width: 85%;
+	min-height: 600px;
+	float: left;
+}
+
+/* Sort */
+#sortInputDiv {
+	width: 100%;
+	height: 120px;
+	float: left;
+	background-color: gray;
+}
+
+/* BUTTONS */
+
+.btn-rect {
+  -moz-box-shadow: 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: 0px 1px 0px 0px #ffffff;
+  -box-shadow: 0px 1px 0px 0px #ffffff;
+  background-color: #0099CC;
+
+  -display:inline-block;
+  -color:#333;
+  font-family:Helvetica;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:40px;
+  line-height:40px;
+  padding: 0 10px;
+  color: #fff;
+  text-decoration:none;
+  text-align:center;
+  line-height: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-rect:hover {
+  background-color:#00688B;
+}
+.btn-rect:active {
+  position:relative;
+  top:1px;
+}
+
+/* Charts */
+#chartContainer {
+	width: 100%;
+	height: 400px;
+	float: left;
+}

@@ -1,2 +1,7 @@
 <%@tag description="Footer Tag" pageEncoding="UTF-8" %>
-<h4>This is a template Footer</h4>
+
+<div class="footer" id="footerDiv">
+	<p>
+		Copyright 2014 Aaron J. Bradley
+	</p>
+</div>
