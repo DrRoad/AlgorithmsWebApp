@@ -1,0 +1,16 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+  	<servlet-name>sort</servlet-name>
+  	<servlet-class>com.ajbradley.AlgorithmsWebApp.SortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>sort</servlet-name>
+  	<url-pattern>/sort</url-pattern>
+  </servlet-mapping>
+</web-app>
