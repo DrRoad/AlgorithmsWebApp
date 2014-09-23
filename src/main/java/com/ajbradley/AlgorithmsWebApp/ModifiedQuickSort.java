@@ -2,14 +2,14 @@ package com.ajbradley.AlgorithmsWebApp;
 
 import java.util.Random;
 import java.lang.System.*;
+import java.util.Arrays;
 
-
-public class InsertionSort {
+public class ModifiedQuickSort {
 
 	private int[] arrayToSort;
 	private int[] sortedArray;
 	
-	public InsertionSort(int n) {
+	public ModifiedQuickSort(int n) {
 
 		arrayToSort = new int[n];
 		sortedArray = new int[n];
@@ -23,17 +23,7 @@ public class InsertionSort {
 	public double startSort() {
 		
 		long time0 = System.nanoTime();
-		sortedArray[0] = arrayToSort[0];
-		for(int key=1; key<arrayToSort.length; key++) {
-			sortedArray[key] = arrayToSort[key];
-			for(int j=key; j>0; j--) {
-				if(sortedArray[j] < sortedArray[j-1]) {
-					int temp = sortedArray[j-1];
-					sortedArray[j-1] = sortedArray[j];
-					sortedArray[j] = temp;
-				}
-			}
-		}
+		Arrays.sort(arrayToSort);
 		long time1 = System.nanoTime();
 		double timeElapsed = (time1 - time0) * 1E-9;
 

@@ -44,6 +44,10 @@ textarea {
   float: left;
 }
 
+select {
+  font-size: 25px;
+}
+
 /*Header*/
 
 h1#headerTitle {
@@ -56,22 +60,15 @@ h1#headerTitle {
 
 #headerDiv {
 	height: 60px;
-	background-color: #eaeaea;
-
+  width: 100%;
+  float: left;
+	background-color: #00CC00;
 }
 
-#headerLeft {
-	height: 100%;
-	background-color: #84FC00;
-	width: 30%;
-	float: left;
-}
-
-#headerRight {
-	height: 100%;
-	background-color: #0099cc;
-	width: 70%;
-	float: left;
+#headerDiv h1 {
+  height: 60px;
+  margin: auto auto;
+  font-size: 300%;
 }
 
 /* Footer */
@@ -82,15 +79,33 @@ h1#headerTitle {
 }
 
 #leftMenuDiv {
-	width: 15%;
+	width: 20%;
 	height: 600px;
 	float: left;
 	background-color: #DE5900;
 }
 
+.leftMenuItem {
+  width: 90%;
+  float: left;
+  height: 70px;
+  margin: 10px 5%;
+  border-bottom: 5px solid #eaeaea;
+}
+
+.leftMenuItem a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  }
+
+  .leftMenuItem a:hover {
+    color: blue;
+  }
+
 /* Body */
 #body {
-	width: 85%;
+	width: 80%;
 	min-height: 600px;
 	float: left;
 }
@@ -101,6 +116,35 @@ h1#headerTitle {
 	height: 120px;
 	float: left;
 	background-color: gray;
+}
+
+.form {
+  height: 100%;
+  float: left;
+  margin: 10px 10px;
+  font-size: 20px;
+}
+
+#sortAlg {
+  width: 35%;
+}
+
+#sortNum {
+  width: 45%;
+}
+
+#sortSubmit {
+  width: 10%;
+}
+
+#numInts {
+  width: 50%;
+  font-size: 20px;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
 }
 
 /* BUTTONS */
@@ -138,6 +182,6 @@ h1#headerTitle {
 /* Charts */
 #chartContainer {
 	width: 100%;
-	height: 400px;
+	height: 600px;
 	float: left;
 }

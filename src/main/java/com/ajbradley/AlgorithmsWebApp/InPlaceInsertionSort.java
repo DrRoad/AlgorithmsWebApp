@@ -4,12 +4,12 @@ import java.util.Random;
 import java.lang.System.*;
 
 
-public class InsertionSort {
+public class InPlaceInsertionSort {
 
 	private int[] arrayToSort;
 	private int[] sortedArray;
 	
-	public InsertionSort(int n) {
+	public InPlaceInsertionSort(int n) {
 
 		arrayToSort = new int[n];
 		sortedArray = new int[n];
@@ -23,20 +23,24 @@ public class InsertionSort {
 	public double startSort() {
 		
 		long time0 = System.nanoTime();
-		sortedArray[0] = arrayToSort[0];
+		
 		for(int key=1; key<arrayToSort.length; key++) {
-			sortedArray[key] = arrayToSort[key];
 			for(int j=key; j>0; j--) {
-				if(sortedArray[j] < sortedArray[j-1]) {
-					int temp = sortedArray[j-1];
-					sortedArray[j-1] = sortedArray[j];
-					sortedArray[j] = temp;
+				if(arrayToSort[j] < arrayToSort[j-1]) {
+					int temp = arrayToSort[j-1];
+					arrayToSort[j-1] = arrayToSort[j];
+					arrayToSort[j] = temp;
 				}
 			}
 		}
 		long time1 = System.nanoTime();
 		double timeElapsed = (time1 - time0) * 1E-9;
-
+		//System.out.println("\n" + timeElapsed);
+		
+		//for(int i=0; i<arrayToSort.length; i++) {
+		//	System.out.print(arrayToSort[i] + " ");
+		//}
+		
 		return timeElapsed;
 
 	}
